@@ -17,6 +17,10 @@
  * Define Global Variables
  * 
 */
+// Global variable for sections & Navigation
+const nav = document.getElementById('navbar__list');
+const sections = document.querySelectorAll('section');
+//end of global variables
 
 
 /**
@@ -34,7 +38,21 @@
 */
 
 // build the nav
+const navCreator = () => {
 
+    // Sections Loop
+    let navLI = '';
+    sections.forEach(section =>{
+        const navID = section.id;
+        const navDATA = section.dataset.nav;
+
+        navLI += `<li><a class="menu__link" href="#${navID}">${navDATA}</a></li>`;
+    });
+    //adding the ListItems to the UL tag in HTML
+    nav.innerHTML = navLI ; 
+};
+
+navCreator();
 
 // Add class 'active' to section when near top of viewport
 
