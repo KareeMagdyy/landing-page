@@ -2,9 +2,9 @@
 
 ## Used Languages
 
-* HTML
-* CSS
-* JavaScript ES6
+- HTML
+- CSS
+- JavaScript ES6
 
 ## Functions
 
@@ -14,6 +14,6 @@
 
 ## How to open the project
 
--Open your favorite browser
--Press `Ctrl+O`
--Choose the file destination & open it
+- Open your favorite browser
+- Press `Ctrl+O`
+- Choose the file destination & open it
