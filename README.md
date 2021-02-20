@@ -8,9 +8,9 @@
 
 ## Functions
 
--Dynamic navigation list
--Dynamic active class
--Scroll to anchor effect
+- Dynamic navigation list
+- Dynamic active class
+- Scroll to anchor effect
 
 ## How to open the project
 
