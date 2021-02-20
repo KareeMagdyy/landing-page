@@ -52,10 +52,29 @@ const navCreator = () => {
     nav.innerHTML = navLI ; 
 };
 
-navCreator();
+
 
 // Add class 'active' to section when near top of viewport
+function viewPort (viewP) {
 
+    let sectionPosition = viewP.getBoundingClientRect();
+    return (sectionPosition.top >= 0);
+}
+
+//highlight the viewed section
+function toggleActiveClass() {
+    for (section of sections) {
+        // section in viewport
+        if (viewPort(section)){
+            if (!section.classList.contains('your-active-class')) {
+                //adding the class if not added
+                section.classList.add('your-active-class');
+            }
+        } else { // removing the class if not in viewport
+            section.classList.remove('your-active-class');
+        }
+    }
+}
 
 // Scroll to anchor ID using scrollTO event
 
@@ -67,9 +86,9 @@ navCreator();
 */
 
 // Build menu 
-
+navCreator();
 // Scroll to section on link click
 
 // Set sections as active
-
+window.addEventListener('scroll', toggleActiveClass);
 
