@@ -1,0 +1,22 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Project 1 Landing page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KareeMagdyy/landing-page.git"
+  },
+  "author": "Kareem Magdy El-Zomor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KareeMagdyy/landing-page/issues"
+  },
+  "homepage": "https://github.com/KareeMagdyy/landing-page#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
